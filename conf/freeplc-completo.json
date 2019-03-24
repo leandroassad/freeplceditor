@@ -1,0 +1,220 @@
+{
+	"freePLC" : {
+		"icon" : "conf/images/freeplc.png",
+		"projects_folder" : "projects"
+	},
+	"ladderConf" : {
+		"folders" : [
+			{
+				"name": "BIT",
+				"command" : [
+					{
+						"name" : " BST ",
+						"description" : "Insert Branch",
+						"image" : "conf/images/Branch.PNG",
+						"classname" : "com.freeplc.editor.project.component.Branch"
+					},
+					{
+						"name" : " XIC ",
+						"description" : "Examine If Closed",
+						"image" : "conf/images/XIC.PNG",
+						"classname" : "com.freeplc.editor.project.component.ExamineIfClosed"
+					},
+					{
+						"name" : " XIO ",
+						"description" : "Examine If Open",
+						"image" : "conf/images/XIO.PNG",
+						"classname" : "com.freeplc.editor.project.component.ExamineIfOpen"
+					},
+					{
+						"name" : " OTE ",
+						"description" : "Output Energize",
+						"image" : "conf/images/OTE.PNG",
+						"classname" : "com.freeplc.editor.project.component.OutputEnergize"
+					},
+					{
+						"name" : " OTL ",
+						"description" : "Output Latch",
+						"image" : "conf/images/LATCH.PNG",
+						"classname" : "com.freeplc.editor.project.component.OutputLatch"
+					},
+					{
+						"name" : " OTU ",
+						"description" : "Output Unlatch",
+						"image" : "conf/images/UNLATCH.PNG",
+						"classname" : "com.freeplc.editor.project.component.OutputUnlatch"
+					}
+				]
+			},
+			{
+				"name" : "TIMER/COUNTER",
+				"command" : [
+					{
+						"name" : " TON ",
+						"description" : "Timer On Delay",
+						"image" : null,
+						"classname" : "com.freeplc.editor.project.component.TimerOnDelay"
+					},
+					{
+						"name" : " RTO ",
+						"description" : "Retentive Timer On Delay",
+						"image" : null,
+						"classname" : "com.freeplc.editor.project.component.RetentiveTimer"
+					},
+					{
+						"name" : " CTU ",
+						"description" : "Count Up",
+						"image" : null,
+						"classname" : "com.freeplc.editor.project.component.CountUp"
+					},
+					{
+						"name" : " CTD ",
+						"description" : "Coun Down",
+						"image" : null,
+						"classname" : "com.freeplc.editor.project.component.CountDown"
+					},
+					{
+						"name" : " RST ",
+						"description" : "Reset",
+						"image" : null,
+						"classname" : "com.freeplc.editor.project.component.Reset"
+					}
+				]
+			},
+			{
+				"name" : "COMPARE",
+				"command" : [
+					{
+						"name" : " EQU ",
+						"description" : "Equal",
+						"image" : null,
+						"classname" : "com.freeplc.editor.project.component.Equal"
+					},
+					{
+						"name" : " NEQ ",
+						"description" : "Not Equal",
+						"image" : null,
+						"classname" : "com.freeplc.editor.project.component.NotEqual"
+					},
+					{
+						"name" : " LES ",
+						"description" : "Less Than",
+						"image" : null,
+						"classname" : "com.freeplc.editor.project.component.LessThan"
+					},
+					{
+						"name" : " GRT ",
+						"description" : "Greather Than",
+						"image" : null,
+						"classname" : "com.freeplc.editor.project.component.GreatherThan"
+					},
+					{
+						"name" : " LEQ ",
+						"description" : "Less Than or Equal",
+						"image" : null,
+						"classname" : "com.freeplc.editor.project.component.LessThanOrEqual"
+					},
+					{
+						"name" : " GEQ ",
+						"description" : "Greather Than or Equal",
+						"image" : null,
+						"classname" : "com.freeplc.editor.project.component.GreatherThanOrEqual"
+					}
+				]
+			},
+			{
+				"name" : "COMPUTE MATH",
+				"command" : [
+					{
+						"name" : " ADD ",
+						"description" : "Addition",
+						"image" : null,
+						"classname" : null
+					},
+					{
+						"name" : " SUB ",
+						"description" : "Subtraction",
+						"image" : null,
+						"classname" : null
+					},
+					{
+						"name" : " MUL ",
+						"description" : "Multiplication",
+						"image" : null,
+						"classname" : null
+					},
+					{
+						"name" : " DIV ",
+						"description" : "Division",
+						"image" : null,
+						"classname" : null
+					},
+					{
+						"name" : " SQR ",
+						"description" : "Square Root",
+						"image" : null,
+						"classname" : null
+					}
+				]
+			},
+			{
+				"name" : "MOVE/LOGICAL",
+				"command" : [
+					{
+						"name" : " MOV ",
+						"description" : "Move",
+						"image" : null,
+						"classname" : null
+					},
+					{
+						"name" : " AND ",
+						"description" : "Bitwise Logical AND",
+						"image" : null,
+						"classname" : null
+					},
+					{
+						"name" : " OR ",
+						"description" : "Bitwise Logical OR",
+						"image" : null,
+						"classname" : null
+					},
+					{
+						"name" : " XOR ",
+						"description" : "Bitwise Logical XOR",
+						"image" : null,
+						"classname" : null
+					},
+					{
+						"name" : " NOT ",
+						"description" : "Bitwise Logical NOT",
+						"image" : null,
+						"classname" : null
+					},
+					{
+						"name" : " CLR ",
+						"description" : "Clear",
+						"image" : null,
+						"classname" : null
+					}
+				]
+			},
+			{
+				"name" : "COMMUNICATION",
+				"command" : [
+					{
+						"name" : " MSG ",
+						"description" : "Message To",
+						"image" : null,
+						"classname" : "com.freeplc.editor.project.component.MessageTo"
+					},
+					{
+						"name" : " RCV ",
+						"description" : "Receive From",
+						"image" : null,
+						"classname" : "com.freeplc.editor.project.component.ReceiveFrom"
+					}
+				]
+			}
+		]
+	}
+}

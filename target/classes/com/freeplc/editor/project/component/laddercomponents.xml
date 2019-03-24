@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ladderComponents>
+	<component id="XIC" className="com.freeplc.editor.project.component.ExamineIfCloded" />
+	<component id="XIO" className="com.freeplc.editor.project.component.ExamineIfOpen" />
+	<component id="OTE" className="com.freeplc.editor.project.component.OutputEnergize" />
+	<component id="OTL" className="com.freeplc.editor.project.component.OutputLatch" />
+	<component id="OTU" className="com.freeplc.editor.project.component.OutputUnlatch" />
+	<component id="CTU" className="com.freeplc.editor.project.component.CountUp" />
+	<component id="CTD" className="com.freeplc.editor.project.component.CountDown" />
+	<component id="EQU" className="com.freeplc.editor.project.component.EqualTo" />
+	<component id="GRT" className="com.freeplc.editor.project.component.GreatherThan" />
+	<component id="GTE" className="com.freeplc.editor.project.component.GreatherThanOrEqual" />
+	<component id="LES" className="com.freeplc.editor.project.component.LessThan" />
+	<component id="LTE" className="com.freeplc.editor.project.component.LessThanOrEqual" />
+	<component id="MSG" className="com.freeplc.editor.project.component.MessageTo" />
+	<component id="NEQ" className="com.freeplc.editor.project.component.ReceiveFrom" />
+	<component id="OSR" className="com.freeplc.editor.project.component.OneShotRising" />
+	<component id="RCV" className="com.freeplc.editor.project.component.ReceiveFrom" />
+	<component id="RES" className="com.freeplc.editor.project.component.Reset" />
+	<component id="RTO" className="com.freeplc.editor.project.component.RetentiveTimer" />
+	<component id="TON" className="com.freeplc.editor.project.component.TimerOnDelay" />
+</ladderComponents>

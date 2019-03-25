@@ -108,7 +108,7 @@ public class FreePLCEditor extends JFrame implements ActionListener {
 	private LadderCanvas ladderCanvas;
 	private FooterPanel footerPanel;
 	private ToolBarPanel toolBarPanel;
-	private ProjectExplorerWindow projectExplorer;
+	@Getter private ProjectExplorerWindow projectExplorer;
 	JScrollPane scrollPane;
 	JDesktopPane desktop;
 	
@@ -336,8 +336,8 @@ public class FreePLCEditor extends JFrame implements ActionListener {
 		fileMenu.add(loadProject);
 		fileMenu.add(saveProject);
 		fileMenu.add(saveAsProject);
-		fileMenu.add(new JSeparator());
-		fileMenu.add(properties);
+//		fileMenu.add(new JSeparator());
+//		fileMenu.add(properties);
 		fileMenu.add(new JSeparator());
 		fileMenu.add(exit);
 		

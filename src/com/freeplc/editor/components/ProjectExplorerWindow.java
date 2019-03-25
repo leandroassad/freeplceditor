@@ -14,8 +14,10 @@ import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.TreeSelectionModel;
 
 import com.freeplc.editor.global.Constants;
+import com.freeplc.editor.info.PLCConfiguration;
 import com.freeplc.editor.main.FreePLCEditor;
 import com.freeplc.editor.project.FreePLCProject;
+import com.freeplc.editor.tools.PLCDiscoverWindow;
 
 @SuppressWarnings("serial")
 public class ProjectExplorerWindow extends JInternalFrame  {
@@ -96,12 +98,29 @@ public class ProjectExplorerWindow extends JInternalFrame  {
 	                if (node == null) return;
 	                String nodeInfo = (String)node.getUserObject();
 	                System.out.println("No selecionado: " + nodeInfo);
-	                // Cast nodeInfo to your object and do whatever you want
+	                if (nodeInfo.contains("PLC")) {
+	                	PLCDiscoverWindow discover = new PLCDiscoverWindow(editor, editor.getCurrentProject().getProjectName());
+						editor.getDesktop().add(discover);
+						discover.moveToFront();
+	                }
 	            }
 	        }
 		});
 		
 		setVisible(true);
+	}
+	
+	public void updateConfiguration(PLCConfiguration config){
+		StringBuffer buffer = new StringBuffer();
+		buffer.append("PLC Remoto (")
+		.append(config.getAddress())
+		.append(":")
+		.append(config.getPort())
+		.append(")");
+		String plcNodeStr = buffer.toString();
+		plcNode.setUserObject(plcNodeStr);
+		
+		updateStatus();
 	}
 	
 	private void createDataFilesNodes(DefaultMutableTreeNode dataFilesNode) {

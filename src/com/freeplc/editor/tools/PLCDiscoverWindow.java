@@ -166,18 +166,26 @@ public class PLCDiscoverWindow extends JInternalFrame implements ActionListener 
 			else {
 				int index = table.getSelectedRow();
 				
-				project = new FreePLCProject();
-				project.setPlcType(Constants.PLC_TYPE_REMOTE_DISCOVERY);
-				PLCConfiguration config = plcConfig.get(index);				
-				project.setPlcConfig(config);
+				if (editor.getCurrentProject() != null) {
+					editor.getCurrentProject().setPlcConfig(plcConfig.get(index));
+					
+					editor.getProjectExplorer().updateConfiguration(editor.getCurrentProject().getPlcConfig());
+				}
+				else {
+					project = new FreePLCProject();
+					project.setPlcType(Constants.PLC_TYPE_REMOTE_DISCOVERY);
+					PLCConfiguration config = plcConfig.get(index);				
+					project.setPlcConfig(config);
+
+					project.setProjectName(projectName);
+					project.setProjectFilename("");
+					editor.setFreePLCProject(project);
+					editor.createProjectExplorerWindow();
+					editor.createDrawWindow();
+				}
 				
 			}
 			
-			project.setProjectName(projectName);
-			project.setProjectFilename("");
-			editor.setFreePLCProject(project);
-			editor.createProjectExplorerWindow();
-			editor.createDrawWindow();
 			
 			break;
 		case CANCEL_OPTION:

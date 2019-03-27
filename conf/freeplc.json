@@ -205,13 +205,13 @@
 						"name" : " MSG ",
 						"description" : "Message To",
 						"image" : null,
-						"classname" : "com.freeplc.editor.project.component.MessageTo"
+						"classname" : null
 					},
 					{
 						"name" : " RCV ",
 						"description" : "Receive From",
 						"image" : null,
-						"classname" : "com.freeplc.editor.project.component.ReceiveFrom"
+						"classname" : null
 					}
 				]
 			}
